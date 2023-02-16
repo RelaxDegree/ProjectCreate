@@ -8,6 +8,9 @@ import Task from '../views/Task.vue'
 import Login from '../views/LoginP.vue'
 import UserInfo from '../views/UserInfo/index.vue'
 import Creater from '../views/Creater.vue'
+import ProjectCreate from '../components/ProjectCreate/ProjectCreate.vue'
+import ProjectPreview from '../components/ProjectPreview/ProjectPreview.vue'
+
 
 Vue.use(VueRouter)
 // 1. 创建路由组件
@@ -30,7 +33,9 @@ const routes = [
                 path: '/userinfo',
                 name: 'userInfor',
                 component: UserInfo
-            }
+            },
+            { path: '/create', component: ProjectCreate },
+            { path: '/preview', component: ProjectPreview }
 ]
     },
 {
